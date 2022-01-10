@@ -411,7 +411,7 @@ def create_station(name)
 
   # ---------------------------------- create a new train ---------------
   def create_train(num_train, type, num_cars)
-    CargoTrain.new(num_train, num_cars) if type == 1
+    return CargoTrain.new(num_train, num_cars) if type == 1
     PassengerTrain.new(num_train, num_cars) if type == 2 
   end 
   
